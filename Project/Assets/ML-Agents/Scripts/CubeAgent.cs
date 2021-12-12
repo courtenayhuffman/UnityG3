@@ -8,6 +8,9 @@ using Unity.MLAgents.Sensors;
 public class CubeAgent : Agent
 {
     [SerializeField] private Transform targetTransform;
+    [SerializeField] private Material rewardMaterial;
+    [SerializeField] private Material penaltyMaterial;
+    [SerializeField] private MeshRenderer agentMeshRenderer;
 
     public override void OnEpisodeBegin()
     {
@@ -40,13 +43,13 @@ public class CubeAgent : Agent
     {
         if (other.TryGetComponent<Button>(out Button target))
         {
-            Debug.Log("Collided with button");
+            agentMeshRenderer.material = rewardMaterial;
             SetReward(+1f);
             EndEpisode();
         }
         if (other.TryGetComponent<Wall>(out Wall wall))
         {
-            Debug.Log("Collided with wall");
+            agentMeshRenderer.material = penaltyMaterial;
             SetReward(-1f);
             EndEpisode();
         }

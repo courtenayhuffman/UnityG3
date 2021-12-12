@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!23 &1222052 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 576535077829141748, guid: 4d090cb72edecb845a18a9b3514721af,
+    type: 3}
+  m_PrefabInstance: {fileID: 599787519581180536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &941102700
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +347,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 576535077829141748, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 812e92c0a4c0e5e4b92ce222669a1725, type: 2}
     - target: {fileID: 599787518586711100, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -611,6 +622,26 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 599787520462513832, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787520462513832, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787520462513832, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787520462513832, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.262
+      objectReference: {fileID: 0}
     - target: {fileID: 599787520462513833, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: m_Enabled
@@ -656,5 +687,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: AgentCube
       objectReference: {fileID: 0}
+    - target: {fileID: 2611170197482333270, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_BehaviorType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649707292659066205, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: rewardMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: bad2a7cbfc5c0924282fd27c3b52525a, type: 2}
+    - target: {fileID: 8649707292659066205, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: defaultMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 926a4df29d60cf241a32eea79efbb53b, type: 2}
+    - target: {fileID: 8649707292659066205, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: penaltyMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a023c5c4a7d2be44b534d80df4a34cf, type: 2}
+    - target: {fileID: 8649707292659066205, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: agentMeshRenderer
+      value: 
+      objectReference: {fileID: 1222052}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d090cb72edecb845a18a9b3514721af, type: 3}
