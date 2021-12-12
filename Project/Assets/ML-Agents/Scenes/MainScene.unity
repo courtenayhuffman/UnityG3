@@ -135,6 +135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: m_RootOrder
@@ -292,6 +297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
@@ -455,6 +465,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: m_RootOrder
@@ -533,6 +548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
@@ -706,6 +726,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: m_RootOrder
@@ -784,6 +809,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
@@ -864,6 +894,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: m_RootOrder
@@ -942,6 +977,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
@@ -1022,6 +1062,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: m_RootOrder
@@ -1101,6 +1146,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: m_RootOrder
@@ -1179,6 +1229,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787518603233114, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 599787518603233115, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}

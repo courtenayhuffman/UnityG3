@@ -9,7 +9,6 @@ public class CubeAgent : Agent
 {
     [SerializeField] private Transform targetTransform;
     [SerializeField] private Material rewardMaterial;
-    [SerializeField] private Material penaltyMaterial;
     [SerializeField] private MeshRenderer agentMeshRenderer;
     [SerializeField] private GameObject button;
     [SerializeField] private GameObject barrier;
@@ -27,7 +26,6 @@ public class CubeAgent : Agent
     {
         agentRigidBody.velocity = Vector3.zero;
         transform.localEulerAngles = new Vector3(0, 180, 0);
-        /*Debug.Log(transform.rotation);*/
 
         Vector3 agentPosition = new Vector3(Random.Range(0f, +2f), 0, Random.Range(-0.7f, +0.7f));
         Vector3 buttonPosition = new Vector3(Random.Range(-2f, -0.5f), -0.262f, Random.Range(-0.8f, +0.9f));
@@ -157,14 +155,6 @@ public class CubeAgent : Agent
         {
             agentMeshRenderer.material = rewardMaterial;
             AddReward(+1f);
-            EndEpisode();
-        }
-
-        // TODO: delete code before submission
-        if (other.TryGetComponent<Wall>(out Wall wall))
-        {
-            agentMeshRenderer.material = penaltyMaterial;
-            AddReward(-1f);
             EndEpisode();
         }
     }
