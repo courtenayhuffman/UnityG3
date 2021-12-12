@@ -1,5 +1,5 @@
 behaviors:
-  RollerBall:
+  CubeAgent:
     trainer_type: ppo
     hyperparameters:
       batch_size: 10
@@ -10,8 +10,6 @@ behaviors:
       lambd: 0.99
       num_epoch: 3
       learning_rate_schedule: linear
-      beta_schedule: constant
-      epsilon_schedule: linear
     network_settings:
       normalize: false
       hidden_units: 128
@@ -20,6 +18,12 @@ behaviors:
       extrinsic:
         gamma: 0.99
         strength: 1.0
+      gail:
+        strength: 0.5
+        demo_path: Project/Demos/CubeAgentDemo.demo
+    behavioral_cloning:
+      strength: 0.5
+      demo_path: Project/Demos/CubeAgentDemo.demo
     max_steps: 500000
     time_horizon: 64
     summary_freq: 10000

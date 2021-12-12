@@ -26,6 +26,8 @@ public class CubeAgent : Agent
     public override void OnEpisodeBegin()
     {
         agentRigidBody.velocity = Vector3.zero;
+        transform.localEulerAngles = new Vector3(0, 180, 0);
+        /*Debug.Log(transform.rotation);*/
 
         Vector3 agentPosition = new Vector3(Random.Range(0f, +2f), 0, Random.Range(-0.7f, +0.7f));
         Vector3 buttonPosition = new Vector3(Random.Range(-2f, -0.5f), -0.262f, Random.Range(-0.8f, +0.9f));

@@ -2090,7 +2090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2902496c0120472b90269f94a0aec7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Record: 1
+  Record: 0
   NumStepsToRecord: 0
   DemonstrationName: CubeAgentDemo
   DemonstrationDirectory: Demos
@@ -2169,7 +2169,7 @@ PrefabInstance:
     - target: {fileID: 3201605132050517996, guid: 3785099c6fd81584aa60de9b60ba8b1d,
         type: 3}
       propertyPath: m_BehaviorType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201605132050517996, guid: 3785099c6fd81584aa60de9b60ba8b1d,
         type: 3}
