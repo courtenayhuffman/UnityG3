@@ -212,6 +212,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 31.069, y: 0, z: 0}
+--- !u!4 &1186654858 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 599787520630438130, guid: 4d090cb72edecb845a18a9b3514721af,
+    type: 3}
+  m_PrefabInstance: {fileID: 599787519581180536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1204519406 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 600243899514787414, guid: 4d090cb72edecb845a18a9b3514721af,
@@ -247,6 +253,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &1287140560 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 599787520462513832, guid: 4d090cb72edecb845a18a9b3514721af,
+    type: 3}
+  m_PrefabInstance: {fileID: 599787519581180536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1377828147
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +364,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 812e92c0a4c0e5e4b92ce222669a1725, type: 2}
+    - target: {fileID: 595252326103353978, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 595252326103353978, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 599787518586711100, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -639,8 +661,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 599787520462513832, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787520462513832, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.262
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787520462513832, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 599787520462513833, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
@@ -669,8 +701,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 599787520630438130, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787520630438130, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.189
+      objectReference: {fileID: 0}
+    - target: {fileID: 599787520630438130, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.636
       objectReference: {fileID: 0}
     - target: {fileID: 599787520630438131, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
@@ -692,11 +734,26 @@ PrefabInstance:
       propertyPath: m_BehaviorType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2611170197482333270, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611170197482333270, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8649707292659066205, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: rewardMaterial
       value: 
       objectReference: {fileID: 2100000, guid: bad2a7cbfc5c0924282fd27c3b52525a, type: 2}
+    - target: {fileID: 8649707292659066205, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: buttonTransform
+      value: 
+      objectReference: {fileID: 1287140560}
     - target: {fileID: 8649707292659066205, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: defaultMaterial
@@ -707,6 +764,11 @@ PrefabInstance:
       propertyPath: penaltyMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 0a023c5c4a7d2be44b534d80df4a34cf, type: 2}
+    - target: {fileID: 8649707292659066205, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: targetTransform
+      value: 
+      objectReference: {fileID: 1186654858}
     - target: {fileID: 8649707292659066205, guid: 4d090cb72edecb845a18a9b3514721af,
         type: 3}
       propertyPath: agentMeshRenderer
