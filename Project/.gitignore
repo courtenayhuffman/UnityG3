@@ -68,3 +68,5 @@
 *.vscode/
 
 .DS_Store
+
+Demos/
