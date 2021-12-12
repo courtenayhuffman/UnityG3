@@ -22,19 +22,21 @@ public class CubeAgent : Agent
         agentRigidBody = GetComponent<Rigidbody>();
     }
 
+    // Reset environment after every episode
     public override void OnEpisodeBegin()
     {
         agentRigidBody.velocity = Vector3.zero;
         transform.localEulerAngles = new Vector3(0, 180, 0);
 
+        // Randomise agent, button, and target positions
         Vector3 agentPosition = new Vector3(Random.Range(0f, +2f), 0, Random.Range(-0.7f, +0.7f));
         Vector3 buttonPosition = new Vector3(Random.Range(-2f, -0.5f), -0.262f, Random.Range(-0.8f, +0.9f));
         Vector3 targetPosition = new Vector3(Random.Range(-2f, +2f), -0.189f, Random.Range(2.75f, 4.5f));
-        
         transform.localPosition = agentPosition;
         button.transform.localPosition = buttonPosition;
         targetTransform.localPosition = targetPosition;
 
+        // Reset button and barrier
         button.SetActive(true);
         isButtonAvailable = true;
         barrier.SetActive(true);
@@ -45,10 +47,12 @@ public class CubeAgent : Agent
     {
         sensor.AddObservation(isButtonAvailable ? 1 : 0);
 
+        // Observations for button position
         Vector3 dirToButton = (button.transform.localPosition - transform.localPosition).normalized;
         sensor.AddObservation(dirToButton.x);
         sensor.AddObservation(dirToButton.z);
 
+        // Check if barrier is deactivated
         sensor.AddObservation(isBarrierGone ? 1 : 0);
         if (isBarrierGone)
         {
@@ -69,6 +73,7 @@ public class CubeAgent : Agent
     {
         Vector3 addForce = new Vector3(0, 0, 0);
         
+        // Set agent X direction movement
         int moveX = actions.DiscreteActions[0];
         switch (moveX)
         {
@@ -80,6 +85,7 @@ public class CubeAgent : Agent
                 addForce.x = +1f; break;
         }
 
+        // Set agent Z direction movement
         int moveZ = actions.DiscreteActions[1];
         switch (moveZ)
         {
@@ -91,9 +97,11 @@ public class CubeAgent : Agent
                 addForce.z = +1f; break;
         }
 
+        // Move agent
         float movementSpeed = 2f;
         agentRigidBody.velocity = addForce * movementSpeed + new Vector3(0, agentRigidBody.velocity.y, 0);
 
+        // Agent tries to press button
         bool isButtonPressed = actions.DiscreteActions[2] == 1;
         if (isButtonPressed)
         {
@@ -108,13 +116,13 @@ public class CubeAgent : Agent
                         isButtonAvailable = false;
                         barrier.SetActive(false);
                         isBarrierGone = true;
-                        AddReward(+1f);
+                        AddReward(+1f); // Reward agent for button press
                     }
                 }
             }
         }
 
-        AddReward(-1f / MaxStep);
+        AddReward(-1f / MaxStep);   // Penalise long action times
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -151,11 +159,12 @@ public class CubeAgent : Agent
 
     private void OnTriggerEnter(Collider other)
     {
+        // Check if agent has reached target
         if (other.TryGetComponent<Target>(out Target target))
         {
             agentMeshRenderer.material = rewardMaterial;
             AddReward(+1f);
-            EndEpisode();
+            EndEpisode();   // End episode after target is reached
         }
     }
 }
