@@ -2163,6 +2163,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201605132050517996, guid: 3785099c6fd81584aa60de9b60ba8b1d,
         type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201605132050517996, guid: 3785099c6fd81584aa60de9b60ba8b1d,
+        type: 3}
       propertyPath: m_BehaviorName
       value: CubeAgent
       objectReference: {fileID: 0}
