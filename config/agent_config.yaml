@@ -19,10 +19,10 @@ behaviors:
         gamma: 0.99
         strength: 1.0
       gail:
-        strength: 0.25
+        strength: 0.50
         demo_path: Project/Assets/CubeAgentDemo.demo
     behavioral_cloning:
-      strength: 0.75
+      strength: 0.50
       demo_path: Project/Assets/CubeAgentDemo.demo
     max_steps: 500000
     time_horizon: 64

@@ -31,7 +31,7 @@ public class CubeAgent : Agent
         // Randomise agent, button, and target positions
         Vector3 agentPosition = new Vector3(Random.Range(0f, +2f), 0, Random.Range(-0.7f, +0.7f));
         Vector3 buttonPosition = new Vector3(Random.Range(-2f, -0.5f), -0.262f, Random.Range(-0.8f, +0.9f));
-        Vector3 targetPosition = new Vector3(Random.Range(-2f, +2f), -0.189f, Random.Range(2.75f, 4.5f));
+        Vector3 targetPosition = new Vector3(Random.Range(-2f, +2f), -0.059f, Random.Range(2.75f, 4.5f));
         transform.localPosition = agentPosition;
         button.transform.localPosition = buttonPosition;
         targetTransform.localPosition = targetPosition;
@@ -157,10 +157,10 @@ public class CubeAgent : Agent
         discreteActions[2] = Input.GetKey(KeyCode.E) ? 1 : 0;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
         // Check if agent has reached target
-        if (other.TryGetComponent<Target>(out Target target))
+        if (collision.gameObject.TryGetComponent<Target>(out _))
         {
             agentMeshRenderer.material = rewardMaterial;
             AddReward(+1f);
