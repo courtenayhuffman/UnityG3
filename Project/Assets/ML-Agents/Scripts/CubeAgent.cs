@@ -40,11 +40,11 @@ public class CubeAgent : Agent
         Vector3 dirToButton = (button.transform.localPosition - transform.localPosition).normalized;
         sensor.AddObservation(dirToButton.x);
         sensor.AddObservation(dirToButton.z);
-        */
+        */////
         sensor.AddObservation(transform.position);
         sensor.AddObservation(targetTransform.position);
     }
-
+    
     public override void OnActionReceived(ActionBuffers actions)
     {
          float moveX = actions.ContinuousActions[0];
