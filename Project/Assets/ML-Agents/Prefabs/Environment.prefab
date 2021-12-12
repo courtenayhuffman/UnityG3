@@ -2093,7 +2093,7 @@ MonoBehaviour:
   Record: 0
   NumStepsToRecord: 0
   DemonstrationName: CubeAgentDemo
-  DemonstrationDirectory: Demos
+  DemonstrationDirectory: Assets
 --- !u!1001 &599787520094710714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2255,7 +2255,7 @@ PrefabInstance:
         type: 3}
       propertyPath: penaltyMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 0a023c5c4a7d2be44b534d80df4a34cf, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8096119069385264871, guid: 3785099c6fd81584aa60de9b60ba8b1d,
         type: 3}
       propertyPath: targetTransform
@@ -2265,7 +2265,7 @@ PrefabInstance:
         type: 3}
       propertyPath: agentMeshRenderer
       value: 
-      objectReference: {fileID: 576535077829141748}
+      objectReference: {fileID: 578416543945687666}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3785099c6fd81584aa60de9b60ba8b1d, type: 3}
 --- !u!1 &600243899514787414 stripped
@@ -2280,9 +2280,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 599787520094710714}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &576535077829141748 stripped
+--- !u!23 &578416543945687666 stripped
 MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 23252519576391502, guid: 3785099c6fd81584aa60de9b60ba8b1d,
+  m_CorrespondingSourceObject: {fileID: 23693764256246216, guid: 3785099c6fd81584aa60de9b60ba8b1d,
     type: 3}
   m_PrefabInstance: {fileID: 599787520094710714}
   m_PrefabAsset: {fileID: 0}
