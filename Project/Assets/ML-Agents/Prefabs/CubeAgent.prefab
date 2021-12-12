@@ -330,8 +330,8 @@ GameObject:
   - component: {fileID: 23693764256246216}
   - component: {fileID: 8096119069385264871}
   - component: {fileID: 3201605132050517996}
-  - component: {fileID: 8351271423586296896}
-  - component: {fileID: 2707958455921295381}
+  - component: {fileID: 5035002690974046614}
+  - component: {fileID: 2817238996698436260}
   m_Layer: 0
   m_Name: CubeAgent
   m_TagString: Untagged
@@ -424,6 +424,11 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
   targetTransform: {fileID: 0}
+  rewardMaterial: {fileID: 0}
+  penaltyMaterial: {fileID: 0}
+  agentMeshRenderer: {fileID: 0}
+  button: {fileID: 0}
+  barrier: {fileID: 0}
 --- !u!114 &3201605132050517996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,7 +459,7 @@ MonoBehaviour:
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
---- !u!54 &8351271423586296896
+--- !u!54 &5035002690974046614
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -470,7 +475,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &2707958455921295381
+--- !u!65 &2817238996698436260
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
