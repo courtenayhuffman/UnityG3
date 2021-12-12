@@ -366,5 +366,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 600243899514787414, guid: 4d090cb72edecb845a18a9b3514721af,
+        type: 3}
+      propertyPath: m_Name
+      value: AgentCube
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d090cb72edecb845a18a9b3514721af, type: 3}
