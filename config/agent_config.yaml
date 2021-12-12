@@ -20,10 +20,10 @@ behaviors:
         strength: 1.0
       gail:
         strength: 0.5
-        demo_path: Project/Demos/CubeAgentDemo.demo
+        demo_path: Project/Assets/CubeAgentDemo.demo
     behavioral_cloning:
       strength: 0.5
-      demo_path: Project/Demos/CubeAgentDemo.demo
+      demo_path: Project/Assets/CubeAgentDemo.demo
     max_steps: 500000
     time_horizon: 64
     summary_freq: 10000
